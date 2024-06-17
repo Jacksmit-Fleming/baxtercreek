@@ -1,0 +1,310 @@
+/* The stylesheet for the group project for GEOM 99 based on the one from GEOM 101*/
+
+h1{
+    margin-left: 0px !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    position: relative;
+}
+h1 a{
+    text-decoration: none;
+    color: #f1fcff;
+    font-weight: bold;
+    display: flex;
+}
+h1 a:hover{
+    color: rgb(0, 185, 77);
+}
+.active-page {
+    color: rgb(0, 185, 77);
+}
+
+#landing-Header {
+    font-family: Helvetica, sans-serif;
+    color: #f1fcff;
+    font-size: 55px;
+    font-weight: normal;
+    text-shadow: 3px 3px #000000;
+    padding: 0px;
+
+}
+/* This header contains the nav bar which is fixed*/
+header{
+    font-family: "Crimson Text", serif;
+    font-size: 17px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 10px;
+    font-family: sans-serif;
+    z-index: 10;
+}
+/* The Nav Bar has our subsequent pages which also has our */
+nav{
+    display: flex;
+    background-color: #112d55;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+    float: right;
+}
+
+nav ul {
+    padding-left: 15px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+    padding-right: 20px;
+}
+/* This modifies the hover text of our subsequent pages*/
+nav ul li a{
+    text-decoration: none;
+    color: #f1fcff;
+    font-weight: bold;
+    text-shadow: 0px 0px 7px black;
+}
+/* I we hover on each page title we have a hover effect which is excecuted by the below code*/
+nav ul li a:hover{
+    color: rgb(0, 185, 77);
+}
+
+/* This is the side bar which has the responsive navbar pops at right*/
+.sidebar{
+    position: fixed;
+    top:0%;
+    right: 0%;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:rgb(148, 148, 148, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(24, 69, 106, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    display: none; /* determines the sidebar space between alter before use*/
+}
+.sidebar li{
+    margin-bottom: 10px;
+}
+/* This is the button for the menubar*/
+.hamburger-button{
+    display: none;
+}
+/* SVG file is the responsive menu bar menu and close items */
+svg{
+    fill:skyblue;
+}
+.sub-menu{
+    display: inline;
+    margin-top: 114px;
+    position: fixed;
+    border-top: rgb(0, 185, 77);
+    border-style: ridge;
+    background-color: #000;
+}
+/* These are the media query for reponsive design which was driven from the w3schools responsive hamburger navbar*/
+/* When the screen hits the width of 1470 px which is the first breaking point it displays the hamburger menu item*/
+@media (max-width: 500px){
+    .hide{
+        display: none;
+    }
+    .hamburger-button{
+        display: block;
+    }
+}
+/* When the screen hits the width of 550 px which is the second breaking point it shirnks the logo*/
+@media  (max-width: 1px){
+    .logo{
+        height: 50px;
+        width: 50px;
+    }
+    .sub-menu{
+        margin-top: 130px;
+        width: 100%;
+    }
+    .sub-menu a{
+        margin-left: 30px;
+    }
+}
+@media  (min-width: 650px){
+    .sidebar{
+       display: none;
+    }
+}
+/* if the creen attains the minimum width of 350px the h1 padding left increases*/
+@media (min-width: 350px){
+    h1 {
+        padding-left:10px;
+    }
+}
+@media (max-width: 340px){
+    .sub-menu a{
+        font-size: small;
+    }
+}
+/* The following are the picture native resolution which is resized and holds its size while being shrinked*/
+.raster{
+    margin-left:20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+
+/* ADD IMAGE TAGS HERE FOR PROPER RESOLUTION */
+.imgs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #b3c5d7;
+    margin: 0px;
+}
+
+#main-content,#main-content-landing {
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    width: 90%;
+}
+
+#main-content-landing {
+    background-image: url(img/titlebg.jpg);
+    background-position: center;
+    padding-top: 230px;
+    padding-bottom: 160px;
+    margin: 0px;
+    text-align: center;
+    width: auto;
+}
+
+.section,.section-landing {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+h2{
+    color: #000000;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+h3{
+    color: #000000;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h4 {
+    color: #000000;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p{
+    color: #000000;
+    font-weight: normal;
+    font-size:18px;
+}
+
+i{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+    h1{
+        font-size: 50px;
+    }
+
+    #main-content-landing {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    #landing-Header {
+        font-size: 40px;
+    }
+/* This is the responsive section for our footer which has the flex display and direction to coloumn  so that if the page attains the maximum width of 550px it transforms to the coloumn*/
+    #section-landing p {
+        font-size: 20px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+#team {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: start;
+    justify-items: center;
+}
+
+.team-section {
+    
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 500px;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    height: 900px;
+}
+
+
+.lux-lists {
+	font-size:18px;
+	font-family: Helvetica, sans-serif;
+	list-style-type: circle;
+	display:inline-block;
+	vertical-align: middle;
+	
+}
+
+.lux-lists li{
+	padding: 18px;
+}
+
+
+

@@ -22,35 +22,41 @@ h1 a:hover{
 
 #landing-Header {
     font-family: Helvetica, sans-serif;
-    color: #f1fcff;
+    background-color: #00000083;
+    color: #ffffff;
     font-size: 55px;
     font-weight: normal;
     text-shadow: 3px 3px #000000;
-    padding: 0px;
+    padding: 5px;
+    border-radius: 10px;
 
 }
 /* This header contains the nav bar which is fixed*/
 header{
-    font-family: "Crimson Text", serif;
-    font-size: 17px;
+    font-size: 20px;
     position: fixed;
     left: 0;
     top: 0;
     height: 10px;
-    font-family: sans-serif;
     z-index: 10;
 }
 /* The Nav Bar has our subsequent pages which also has our */
 nav{
     display: flex;
-    background-color: #112d55;
+    background-color: #082131;
     width: 100%;
     position: fixed;
     margin: 0;
     padding: 0;
     align-items: center;
-    justify-content: flex-end;
     float: right;
+    justify-content: space-between;
+    height: 5%;
+}
+
+#navheader {
+    font-size: 20px;
+    padding-left: 20px;
 }
 
 nav ul {
@@ -71,10 +77,13 @@ nav ul li a{
     text-shadow: 0px 0px 7px black;
 }
 /* I we hover on each page title we have a hover effect which is excecuted by the below code*/
-nav ul li a:hover{
+nav ul li a :hover{
     color: rgb(0, 185, 77);
 }
 
+.button:hover{
+    color: rgb(0, 185, 77);
+}
 /* This is the side bar which has the responsive navbar pops at right*/
 .sidebar{
     position: fixed;
@@ -170,14 +179,14 @@ svg{
 
 body{
     font-family: Helvetica, sans-serif;
-    background-color: #b3c5d7;
+    background-color: #113f5d;
     margin: 0px;
 }
 
 #main-content,#main-content-landing {
     text-align: center;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 110px;
     width: 90%;
 }
 
@@ -188,6 +197,9 @@ body{
     padding-bottom: 160px;
     margin: 0px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: auto;
 }
 
@@ -199,10 +211,16 @@ body{
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    color: #e9e9e9;
 }
 
 h2{
-    color: #000000;
+    color: #e9e9e9;
     font-weight: normal;
     font-size: 40px;
     margin-top: 40px;
@@ -210,7 +228,7 @@ h2{
     text-align: center;
 }
 h3{
-    color: #000000;
+    color: #e9e9e9;
     font-weight: normal;
     font-size: 25px;
     margin-top: 10px;
@@ -218,7 +236,7 @@ h3{
     text-align: center;
 }
 h4 {
-    color: #000000;
+    color: #e9e9e9;
     font-weight: normal;
     font-size: 22px;
     margin-top: 25px;
@@ -227,9 +245,10 @@ h4 {
 }
 
 p{
-    color: #000000;
+    color: #e9e9e9;
     font-weight: normal;
     font-size:18px;
+    line-height: 150%;
 }
 
 i{
@@ -247,9 +266,6 @@ i{
         padding-bottom: 100px;
     }
 
-    #landing-Header {
-        font-size: 40px;
-    }
 /* This is the responsive section for our footer which has the flex display and direction to coloumn  so that if the page attains the maximum width of 550px it transforms to the coloumn*/
     #section-landing p {
         font-size: 20px;
@@ -287,9 +303,10 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    height: 900px;
+    height: 1000px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
 }
 
 
@@ -306,5 +323,29 @@ iframe {
 	padding: 18px;
 }
 
+.button {
+    background-color: #8f8f8f80;
+    color: #ffffff;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+}
 
+#buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.newwindowlink {
+    color: #f1fcff;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+}

@@ -187,6 +187,7 @@ body{
     text-align: center;
     margin: auto;
     margin-top: 110px;
+    margin-bottom: 30px;
     width: 90%;
 }
 
@@ -208,12 +209,11 @@ body{
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
 }
+
 
 h1{
     color: #e9e9e9;
@@ -249,6 +249,7 @@ p{
     font-weight: normal;
     font-size:18px;
     line-height: 150%;
+    width: 60%;
 }
 
 i{
@@ -267,9 +268,7 @@ i{
     }
 
 /* This is the responsive section for our footer which has the flex display and direction to coloumn  so that if the page attains the maximum width of 550px it transforms to the coloumn*/
-    #section-landing p {
-        font-size: 20px;
-    }
+
     .row {
         display: flex;
         flex-wrap: wrap;

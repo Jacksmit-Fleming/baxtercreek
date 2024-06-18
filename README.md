@@ -1,5 +1,5 @@
-# GEOM 99 Group Project Website
+# APST 62 Open House Website
 
-## Project - Data Collection in a 3D Environment  
+## Project 2422 - Baxter Creek Watershed: Phase Three Hydrology and 3D Model 
 
 

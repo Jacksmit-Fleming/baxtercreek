@@ -81,7 +81,7 @@ nav ul li a :hover{
     color: rgb(0, 185, 77);
 }
 
-.button:hover{
+.button:hover, .linkedinlink:hover{
     color: rgb(0, 185, 77);
 }
 /* This is the side bar which has the responsive navbar pops at right*/
@@ -204,7 +204,7 @@ body{
     width: auto;
 }
 
-.section,.section-landing {
+.section,.section-landing,.team-section {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -214,6 +214,15 @@ body{
     margin-right: 20px;
 }
 
+.team-section {
+    
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 500px;
+}
 
 h1{
     color: #e9e9e9;
@@ -252,6 +261,10 @@ p{
     width: 60%;
 }
 
+.teamP {
+    width: 80%;
+}
+
 i{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -287,15 +300,7 @@ i{
     justify-items: center;
 }
 
-.team-section {
-    
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 500px;
-}
+
 
 iframe {
     display: block;
@@ -347,4 +352,13 @@ iframe {
     font-weight: bold;
     font-size: 18px;
     display: flex;
+}
+
+.linkedinlink {
+    color: #9feaff;
+    background-color: #8f8f8f80;
+    border-radius: 7px;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 18px;
 }
